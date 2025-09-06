@@ -25,14 +25,15 @@ cd uni-verify
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
 
-
-## Run the API
+### Run the API
 
 ```bash
 uvicorn app.main:app --reload
+```
 
-## Usage
+### Usage
 
 - **POST** student ID images to the `/verify` endpoint  
 - Receive extracted fields and verification status (`APPROVED` or `PENDING_MANUAL_REVIEW`)
